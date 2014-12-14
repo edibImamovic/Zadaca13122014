@@ -3,16 +3,18 @@ public class AutorTest {
 
 	public static void main(String[] args) {
 		
-		Autor autorPrvi = new Autor();
-		System.out.println(autorPrvi.toString());
+		Autor autorKnjige = new Autor();
+		Knjiga mojaKnjiga = new Knjiga();
 		
-		Autor drugi = new Autor ();
-		System.out.println(drugi.toString());
+		autorKnjige.setIme("Ahmed Hromadzic");
+		autorKnjige.setMail("ahmed@hromadzic.com");
+		autorKnjige.setSpol('M');
 		
-		drugi.setSpol("Ž");
-		System.out.println(drugi.toString());
-		
-		
+		mojaKnjiga.setAutor(autorKnjige);
+		mojaKnjiga.setNaziv("Patuljak iz Zaboravljene zemlje");
+		mojaKnjiga.setCijena(20);
+	
+		System.out.println(mojaKnjiga.toString());
 	}
 	
 
