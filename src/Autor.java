@@ -100,12 +100,12 @@ public class Autor {
 	 * @param spol
 	 */
 	public void setSpol(char spol) {
-		if (spol== 'M' && spol == 'Z') {
+		if (spol == 'M' && spol == 'Z') {
 			this.spol = spol;
 
-	//	} else {
-	//		throw new IllegalArgumentException(
-	//				"Za unos spola koristite iskljuèivo slova m (za muški) ili ž (za ženski) spol");
+			// } else {
+			// throw new IllegalArgumentException(
+			// "Za unos spola koristite iskljuèivo slova m (za muški) ili ž (za ženski) spol");
 		}
 
 	}
